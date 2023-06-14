@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block page_css %}<link rel="stylesheet" href="/css/style.scss">{% endblock %}
+{% block page_title %}{% endblock %}
+{% block page_desc %}{% endblock %}
+
+{% block content %}
+    <nav aria-label="breadcrumb" class="mzp-c-breadcrumb">
+        <ol class="mzp-c-breadcrumb-list">
+            <li class="mzp-c-breadcrumb-item">
+                <a href="/discovery">Discover Mozilla's Innovation Ecosystem</a>
+            </li>
+            <li aria-current="page" class="mzp-c-breadcrumb-item">
+                {% set post_title %}{% block post_title %}{{ post_title }}{% endblock %}{% endset %}
+                {{ post_title }}
+            </li>
+        </ol>
+    </nav> <!-- end breadcrumb -->
+    <section class="mzp-l-content mzp-t-content-md">
+        <h2><span class="dark-highlight">{{post_title}}</span></h2>
+        {% block post%}{% endblock %}
+    </section> <!-- end main container -->
+    {% endblock %}
+{% block js %}{% endblock %}

@@ -1,0 +1,23 @@
+<section class="mzp-t-dark">
+    <div class="mzp-l-content">
+        <p> Hello </p>
+    </div>
+</section>
+        <div class="teams-grid">
+         {% set posts = [
+        {"title": "Sample Post", "desc" : "We're going to share more about our work on innovation.", "link": "/discovery/sample-post"},
+        {"title": "Sample Post2", "desc" : "This is an experiment we're doing with Firefox and local LLMs.", "link": "/discovery/sample-post"}
+    ]
+%}
+        {% for post in posts %}
+        <section class="c-card">
+        <div>
+          <p class="c-card-title"> {{ post.title }} </p>
+          <a href = " {{ post.link}} "> Read more </a>
+          <p> {{ post.desc}} </p>
+        </div>
+        </section>
+        { % end for %}
+                    </div>
+    </div>
+    
