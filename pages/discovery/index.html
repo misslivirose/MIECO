@@ -1,0 +1,36 @@
+<!--
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+-->
+
+{% extends "base.html" %}
+
+{% block page_title %}Discover{% endblock %}
+
+{% block page_desc %}{% endblock %}
+
+{% block page_css %}<link rel="stylesheet" href="/css/style.scss">{% endblock %}
+
+{% block content %}
+    <!-- Hero -->
+    <section class="c-innovation-hero mzp-t-dark">
+        <div class="mzp-l-content">
+            <div class="hero-text-wrapper">
+                <h1>Discover recent explorations across Mozilla's Innovation Ecosystem</h2>
+            </div>
+        </div>
+    </section>
+    <!-- posts -->
+   <section class="mzp-l-content" id="discovery-content">
+        <div class="mzp-l-content">
+        </div>
+   </section>
+  
+{% endblock %}
+
+{% block js %}
+    <script type="module" src="/scripts/email.js"></script>
+{% endblock %}
+
